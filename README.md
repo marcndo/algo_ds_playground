@@ -12,12 +12,12 @@ This repository contains implementations of various Data Structures and Algorith
    git clone https://github.com/marcndo/algo_ds_playground.git
 2. Navigate to the desired folder for algorithms or data structures and run the Python files.
 
-## Ways of contributing.
+## How to contribute to this repository.
 * This repository is open to all people who are interested in contributing.
   You can contribute in any of the following ways.
    - Report a bug
    - fix bugs
-   - Add practice examples
+   - Add practice examples. This example could be an interview question from any Company.
    - Suggest better ways of managing the repository.
   
 
