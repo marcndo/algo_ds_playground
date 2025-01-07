@@ -1,4 +1,3 @@
-import time 
 """Write a scans two arrays and return true if there's a match or false
 when there's no match
 """
@@ -53,6 +52,5 @@ def compare_arrays(arr1, arr2):
     return list(set(arr1).intersection(set(arr2)))
 
 
-start_time = time.time()
 print(compare_arrays(arr1, arr2))
 
