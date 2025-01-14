@@ -48,6 +48,35 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def insert(self, position, data):
+        """
+        Insert a new node at a specific position in the list.
+        Position is zero-based:
+        - 0 to insert at the beginning
+        - len(list) to append to the end
+        """
+        if position < 0:
+            raise ValueError("Position must be a non-negative integer.")
+        
+        new_node = Node(data)
+        # Insert at the head
+        if position == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        current = self.head
+        count = 0
+        # Traverse the list to find the insertion point
+        while current and count < position - 1:
+            count += 1
+            current = current.next
+        # If position is beyond the length of the list
+        if not current:
+            raise IndexError("Position out of bounds.")
+        # Insert the new node
+        new_node.next = current.next
+        current.next = new_node
+    
     def __repr__(self):
         """Return a string representation of the list."""
         nodes = []
@@ -64,6 +93,7 @@ linked_list.append(10)
 linked_list.append(20)
 linked_list.append(30) 
 linked_list.append(50)
+linked_list.insert(2, 9)
 print(linked_list)
 linked_list.prepend(123)
 linked_list.delete(30)
