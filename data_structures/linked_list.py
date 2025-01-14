@@ -42,6 +42,11 @@ class LinkedList:
         prev.next = current.next
         current = None
 
+    def prepend(self, data):
+        """Add a node at the beginning of the list."""
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
 
     def __repr__(self):
         """Return a string representation of the list."""
@@ -60,6 +65,6 @@ linked_list.append(20)
 linked_list.append(30) 
 linked_list.append(50)
 print(linked_list)
-linked_list.append(123)
+linked_list.prepend(123)
 linked_list.delete(30)
 print(linked_list)
