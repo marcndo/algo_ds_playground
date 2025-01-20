@@ -22,4 +22,3 @@ class MyArray:
         del self.data[self.length -1]
         self.length -=1
         return shift_items(index)
-
