@@ -43,10 +43,23 @@ class BinaryTree:
     def lookup(self, value):
         pass
 
+
+    def print_tree(self, node=None, level=0):
+        if node is None:
+            node = self.root
+        if node is not None:
+            # Only print the right subtree if node.right is not None
+            if node.right:  
+                self.print_tree(node.right, level + 1)  # Recurse into the right subtree
+            print(' ' * 4 * level + '->', node.value)  # Print the current node's value
+            # Only print the left subtree if node.left is not None
+            if node.left:  
+                self.print_tree(node.left, level + 1) 
+
 binary_tree = BinaryTree()
 binary_tree.insert(9)
 binary_tree.insert(4)
 binary_tree.insert(20)
 binary_tree.insert(15)
 binary_tree.insert(170)
-print(binary_tree)
+binary_tree.print_tree()
