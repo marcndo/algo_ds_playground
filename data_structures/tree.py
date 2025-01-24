@@ -41,7 +41,15 @@ class BinaryTree:
 
     
     def lookup(self, value):
-        pass
+        current_node = self.root
+        while current_node:
+            if value == current_node.value:
+                return current_node  # Value found, return the node
+            elif value < current_node.value:
+                current_node = current_node.left  # Go to the left child
+            else:
+                current_node = current_node.right
+        return None
 
 
     def print_tree(self, node=None, level=0):
@@ -62,4 +70,17 @@ binary_tree.insert(4)
 binary_tree.insert(20)
 binary_tree.insert(15)
 binary_tree.insert(170)
+print(binary_tree.lookup(15))
+
 binary_tree.print_tree()
+result = binary_tree.lookup(15)
+if result:
+    print("Found:", result.value)
+else:
+    print("Value not found.")
+
+result = binary_tree.lookup(100)
+if result:
+    print("Found:", result.value)
+else:
+    print("Value not found.")
