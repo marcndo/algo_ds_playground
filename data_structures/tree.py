@@ -1,3 +1,4 @@
+#implement the delete method
 class Node:
     def __init__(self, value):
         self.left = None
