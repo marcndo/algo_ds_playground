@@ -4,6 +4,9 @@ class MyArray:
         self.length = 0
         self.data = {}
 
+    def __str__(self):
+        return f"{self.data}"
+    
     def get_item(self, index):
         return self.data[index]
     
@@ -22,3 +25,13 @@ class MyArray:
         del self.data[self.length -1]
         self.length -=1
         return shift_items(index)
+    
+    def insert_item(self, index, value):
+        for i in range(index, self.length):
+            if i == index:
+                current_val = self.data[index]
+                self.data[index] = value
+                next_val = self.data[index + 1]
+                self.data[index + 1] = current_val
+        self.data[self.length] = next_val
+        self.length +=1
