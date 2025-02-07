@@ -1,4 +1,5 @@
 import random
+
 def selection_sort(array):
     length = len(array)
     for i in range(length):
@@ -16,6 +17,6 @@ def selection_sort(array):
     return array
                 
 
-array = random.sample(range(10), 8)
+array = random.sample(range(10), 10)
 print(array)
 print(selection_sort(array))
