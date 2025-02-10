@@ -11,13 +11,11 @@ def container_with_max_water(array):
                 maximum_area = area
     return f'{maximum_area}m^2'
 
-# Shifting pointers approach a = [1,8,6]
+#Shifting pointers approach a = [1,8,6]
 def opt_container_with_max_water(array):
     pointer_1 = 0 
     pointer_2 = len(array)-1 
     maximum_area = 0 
-    area = min(array[pointer_1], array[pointer_2]) * (pointer_2 - pointer_1) #1
-    maximum_area = area
     while pointer_1 < pointer_2:
         area = min(array[pointer_2], array[pointer_1]) * (pointer_2 - pointer_1)
         if area > maximum_area:
