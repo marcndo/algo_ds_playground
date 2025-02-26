@@ -13,7 +13,7 @@ This repository contains implementations of various Data Structures and Algorith
 2. Navigate to the desired folder for algorithms or data structures and run the Python files.
 
 ## How to contribute to this repository.
-* This repository is open to all people who are interested in contributing.
+* This repository is open to everyone who is interested in contributing.
   You can contribute in any of the following ways.
    - Report a bug
    - fix bugs
