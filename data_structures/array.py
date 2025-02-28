@@ -35,3 +35,22 @@ class MyArray:
                 self.data[index + 1] = current_val
         self.data[self.length] = next_val
         self.length +=1
+
+# Implement a static array
+class Array:
+    def __init__(self, size):
+        self.data = [None] * size
+        self.length = 0
+
+    def __str__(self):
+        return str(self.data)
+
+    def append(self, value):
+        self.data[self.length - 1] = value
+        self.length += 1
+
+    def get(self, index):
+        for i in range(self.length):
+            if i == index:
+                return self.data[index]
+        return f'No element at index {index}'
