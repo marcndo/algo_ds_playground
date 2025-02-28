@@ -6,7 +6,7 @@ class HashTables:
     def _hash(self, key):
         hash_value = 0
         for i in range(len(key)):
-            hash_value = (hash_value + ord(key[i]) * (i+1)) % len(self.data)
+            hash_value = (hash_value + ord(key[i])) % len(self.data)
         return hash_value
     
 # set values to keys
@@ -21,7 +21,7 @@ class HashTables:
         address = self._hash(key)
         current_bucket = self.data[address]
         if current_bucket:
-            for i in range(len(self.data)):
+            for i in range(len(current_bucket)):
                 if current_bucket[i][0] == key:
                     return current_bucket[i][1]
         return None
