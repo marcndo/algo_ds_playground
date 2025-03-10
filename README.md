@@ -23,8 +23,11 @@ This repository contains implementations of various Data Structures and Algorith
 
 ## Contribution:
 - Fork the repository.
-- Create a new branch (`git checkout -b feature/your-feature`).
+- Create a new branch
+  `(git checkout -b feature/your-feature)`
 - Implement your changes and write tests.
-- Commit your changes (`git commit -am 'Added new feature'`).
-- Push to the branch (`git push origin feature/your-feature`).
+- Commit your changes
+  `(git commit -am 'Added new feature')`
+- Push to the branch
+  `(git push origin feature/your-feature)`
 - Create a pull request.
