@@ -3,7 +3,7 @@
 This repository contains implementations of various Data Structures and Algorithms (DSA) along with solutions to problems leveraging these DSA concepts. It serves as a playground for learning, practicing, and mastering data structures and algorithms.
 
 ## Features:
-- Implementations of fundamental data structures like arrays, linked lists, stacks, queues, and trees.
+- Implementations of fundamental data structures like arrays, linked lists, stacks, queues, trees, graphs.
 - Popular algorithms such as sorting, searching, dynamic programming, and graph algorithms.
 - Problem-solving using different algorithms and data structures.
 
