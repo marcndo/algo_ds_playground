@@ -15,8 +15,8 @@ This repository contains implementations of various Data Structures and Algorith
 ## How to contribute to this repository.
 * This repository is open to everyone who is interested in contributing and also to showcase their skills.
   You can contribute in any of the following ways.
-   - Report a bug
-   - fix bugs
+   - Report a bug.
+   - fix bugs.
    - Add practice examples. This example could be an interview question from any Company.
    - Suggest better ways of managing the repository.
   
