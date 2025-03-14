@@ -9,7 +9,7 @@ This repository contains implementations of various Data Structures and Algorith
 
 ## Usage:
 1. Clone the repository:
-   git clone https://github.com/marcndo/algo_ds_playground.git
+   git clone https://github.com/marcndo/algo_ds_playground.git.
 2. Navigate to the desired folder for algorithms or data structures and run the Python files.
 
 ## How to contribute to this repository.
