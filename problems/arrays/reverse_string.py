@@ -1,25 +1,16 @@
-"""create a functions that reverse a string
+"""https://leetcode.com/problems/reverse-string/: create a functions that reverse a string
 Hi my name is Somebody should be ydobemoS si eman ym iH"""
 
-# A straight forward solution
-# def reverse_string1(st):
-#     backward = ''
-#     if not isinstance(st, str) or not st:
-#         return f"Double check your input and confirm that it's a string"
-#     return st[::-1]
-    
-# A second solution
+
 def reverse_string(st):
-    backward = ''
-    if not isinstance(st, str) or not st:
-        return f"Double check your input and confirm that it's a string"
-    elif len(st) < 2:
-        backward = st
-    for i in range(len(st)-1, -1, -1):
-        backward += st[i]
-    return backward
+    if not isinstance(st, list) or not all(isinstance(i, str) and len(i) == 1 for i in st):
+        return "double check the input and ensure it's an array of character"
+    left, right = 0, len(st) - 1
+    while left < right:
+        st[left], st[right] = st[right], st[left]
+        left += 1
+        right -= 1
+    return st
 
 
-
-print(reverse_string('Hi my name is Somebody'))
-#print(reverse_string1('Hi my name is Somebody'))
+print(reverse_string(['A', 'p', 'p', 'l', 'e']))
