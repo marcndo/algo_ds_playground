@@ -27,5 +27,6 @@ def opt_container_with_max_water(array):
         
     return f'{maximum_area}m^2'
 
+a = [2, 7]
 print(opt_container_with_max_water(a))
 print(container_with_max_water(a))
