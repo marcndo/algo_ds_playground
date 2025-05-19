@@ -1,22 +1,53 @@
 import random
+"""input:[5, 1, 4, 8, 2]
+output: [1, 2, 4, 5, 8]
+input: [9, 7, 3, 1]
+output: [1, 3, 7, 9]
+input: [1, 5, 6, 9]
+output: [1, 5, 6, 9]
+input: [1]
+output: arr
+input: []
+output: arr
+======================
+input:[5, 1, 4, 8, 2] 1->[1, 5, 4, 8, 2] 2->[1, 2, 4, 8, 5]
+min_val_index = 4
+i = 3
+j = 4
+n = 5
+========================
+func selectionSort(arr)
+    n = len(arr)
+    for i in range(n)
+    min_val_index = i
+        for j in range(i+1, n)
+            if arr[j] < arr[min_val_index]
+                min_val_index = j
+        if min_val_index != i
+            arr[i], arr[min_val_index] = arr[min_val_index], arr[i]
+        else:
+        continue
+"""
 
-def selection_sort(array):
-    length = len(array)
-    for i in range(length):
-        min_index = i
-        temp = array[i]
-        swaped = False
-        for j in range(i+1,length):
-            if array[j] < array[min_index]:
-                min_index = j
-        array[i] = array[min_index]
-        array[min_index] = temp
-        swaped = True
-        if not swaped:
-            break
-    return array
+
+def selection_sort(arr):
+    array_length = len(arr)
+    if array_length == 0 or array_length == 1:
+        return arr
+    for i in range(array_length):
+        min_val_index = i
+        for j in range(i+1, array_length):
+            if arr[j] < arr[min_val_index]:
+                min_val_index = j
+        if min_val_index != i:
+            arr[i], arr[min_val_index] = arr[min_val_index], arr[i]
+        else:
+            continue
+    return arr
                 
 
 array = random.sample(range(10), 10)
 print(array)
 print(selection_sort(array))
+arr = [2, 8, 1, 3, 9]
+print(selection_sort(arr))
