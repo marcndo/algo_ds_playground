@@ -47,7 +47,16 @@ def selection_sort(arr):
                 
 
 array = random.sample(range(10), 10)
-print(array)
-print(selection_sort(array))
 arr = [2, 8, 1, 3, 9]
-print(selection_sort(arr))
+arr1 = [1, 5, 6, 9]
+arr2 = [1]
+arr3 = []
+test_cases = [arr, arr1, arr2, arr3]
+
+for case in test_cases:
+    print("Before sorting")
+    print("==================")
+    print(case)
+    print("After sorting")
+    print(selection_sort(case))
+    print("\n")
