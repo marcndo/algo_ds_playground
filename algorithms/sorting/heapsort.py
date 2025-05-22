@@ -1,5 +1,14 @@
 import random
 """
+Steps
+=====================================================================================
+Interpret the array as a binary heap (array-based binary tree).
+Build a Max Heap: Ensure every parent node is greater than or equal to its children.
+Swap the root (maximum value) with the last element in the heap.
+Reduce the heap size (exclude the last element from heap).
+Heapify the root to maintain the Max Heap property.
+Repeat Steps 3–5 until only one element remains.
+======================================================================================
 FUNCTION heap_sort(arr)
     array_length = len(arr)
     IF array_length <= 1
