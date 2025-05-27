@@ -13,12 +13,13 @@ left and right pointer are equal, we return true
 
 
 def is_palindrome(string):
-    if len(string) < 2:
+    if len(string) < 1:
         return True
-    string_char = ''.join(ch for ch in string.lower() if ch.isalpha())
+    string_char = ''.join(ch for ch in string.lower() if ch.isalnum())
+    print(string_char)
     right_scanner = len(string_char) - 1
     left_scanner = 0
-    while left_scanner <= right_scanner:
+    while left_scanner < right_scanner:
         if string_char[left_scanner] != string_char[right_scanner]:
             return False
         else:
@@ -28,4 +29,5 @@ def is_palindrome(string):
 
 
 st = "A man, a plan, a canal: Panama"
+st = "0P"
 print(is_palindrome(st))
