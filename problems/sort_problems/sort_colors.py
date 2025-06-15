@@ -65,3 +65,5 @@ for case in test_cases:
     print("After sorting")
     print(sort_colors(case))
     print("\n")
+
+arr1 = [1, 0, 2]

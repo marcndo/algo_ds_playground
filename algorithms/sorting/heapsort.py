@@ -2,12 +2,11 @@ import random
 """
 Steps
 =====================================================================================
-Interpret the array as a binary heap (array-based binary tree).
-Build a Max Heap: Ensure every parent node is greater than or equal to its children.
-Swap the root (maximum value) with the last element in the heap.
-Reduce the heap size (exclude the last element from heap).
-Heapify the root to maintain the Max Heap property.
-Repeat Steps 3–5 until only one element remains.
+Build a max heap(a binary tree whereby each parent node is greater than child node)
+Swap the root(max) node with the last element in the heap
+Reduce the heap size by one
+Heapify to get a max heap
+Repeat 2 to 4 until the heap size is 1
 ======================================================================================
 FUNCTION heap_sort(arr)
     array_length = len(arr)
@@ -17,7 +16,7 @@ FUNCTION heap_sort(arr)
     FOR i FROM array_length/2 - 1 to 0
         heapify(arr, array_length, i)
     END FOR
-    FOR in FROM n-1 to DOWNTO 1
+    FOR i FROM n-1 to DOWNTO 1
       swap arr[0] with arr[i]
       heapify(arr,i,0)
     END FOR
@@ -77,7 +76,7 @@ arr = [2, 8, 1, 3, 9]
 arr1 = [1, 5, 6, 9]
 arr2 = [1]
 arr3 = []
-test_cases = [arr, arr1, arr2, arr3]
+test_cases = [array, arr, arr1, arr2, arr3]
 
 for case in test_cases:
     print("Before sorting")

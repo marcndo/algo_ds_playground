@@ -1,5 +1,4 @@
 """
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 # Given a sorted array, it is required that we removed all duplicates
 in-place and return the new length
 

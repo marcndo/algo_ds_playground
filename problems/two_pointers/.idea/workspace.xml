@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="857d3398-11eb-44a0-9499-1b753e2de953" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../sliding_window/longest_repeated_char.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithms/sorting/bubblesort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/sorting/bubblesort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithms/sorting/heapsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/sorting/heapsort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithms/sorting/insertion_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/sorting/insertion_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithms/sorting/mergesort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/sorting/mergesort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data_structures/array.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../data_structures/array.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../k_longest_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/../k_longest_element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sliding_window/min_window_substring.py" beforeDir="false" afterPath="$PROJECT_DIR$/../sliding_window/min_window_substring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sort_problems/sort_arry.py" beforeDir="false" afterPath="$PROJECT_DIR$/../sort_problems/sort_arry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sort_problems/sort_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../sort_problems/sort_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drop_duplicates.py" beforeDir="false" afterPath="$PROJECT_DIR$/drop_duplicates.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2yOHUEjjs9qlV1Dmd1M6LeF3BfJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="857d3398-11eb-44a0-9499-1b753e2de953" name="Changes" comment="" />
+      <created>1749698712730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749698712730</updated>
+    </task>
+    <servers />
+  </component>
+</project>

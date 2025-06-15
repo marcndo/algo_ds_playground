@@ -1,7 +1,5 @@
 import random
-# Simple bubble sort without optimization
-array1 = [5, 2, 6, 1, 9, 0, 1]
-array = random.sample(range(10), 10)
+
 def bubble_sort(array):
     length = len(array)
     for i in range(length):
@@ -28,7 +26,5 @@ def optimize_bubble_sort(array):
     return array
 
 
-print(array)
-print(optimize_bubble_sort(array))
-print(bubble_sort(array))
+
 

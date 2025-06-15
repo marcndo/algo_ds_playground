@@ -54,3 +54,11 @@ class Array:
             if i == index:
                 return self.data[index]
         return f'No element at index {index}'
+    
+my_array = MyArray()
+my_array.push_item(8)
+my_array.push_item(9)
+my_array.push_item(6)
+my_array.insert_item(1, 20)
+my_array.pop_item()
+print(my_array)

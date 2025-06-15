@@ -67,13 +67,12 @@ def merge(left, right):
 
 
 
-
 array = random.sample(range(10), 10)
 arr = [2, 8, 1, 3, 9]
 arr1 = [1, 5, 6, 9]
 arr2 = [1]
 arr3 = []
-test_cases = [arr, arr1, arr2, arr3]
+test_cases = [array, arr, arr1, arr2, arr3]
 
 for case in test_cases:
     print("Before sorting")
@@ -82,8 +81,6 @@ for case in test_cases:
     print("After sorting")
     print(merge_sort(case))
     print("\n")
-
-
 
 
 
