@@ -27,10 +27,10 @@ postfix =[24, 12, 4, 1]
 def array_product(nums):
     n = len(nums)
     prefix = 1
-    prefix_array = [1]
+    prefix_array = [1] * n  # allocate space ahead of time to avoid potential reallocation in the for loop
     for i in range(1, n):
         prefix *= nums[i-1]
-        prefix_array.append(prefix)
+        prefix_array[i] = prefix
 
     postfix = 1
     for j in range(n-1, -1, -1):
