@@ -29,5 +29,5 @@ def is_palindrome(string):
 
 
 st = "A man, a plan, a canal: Panama"
-st = "0P"
+#st = "0P"
 print(is_palindrome(st))
