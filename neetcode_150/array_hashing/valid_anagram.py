@@ -26,3 +26,19 @@ def is_anagram__(s,t):
         if val != 0:
             return False
     return True
+
+def is_anagram___(s,t):
+    if len(s) != len(t):
+        return False
+    count = [0] * 26
+    for i in range(len(s)):
+        count[ord(s[i]) - ord('a')] += 1
+        count[ord(t[i]) - ord('a')] -= 1
+
+    return all(f == 0 for f in count)
+
+s = "cat"
+t = "act"
+
+print(is_anagram___(s,t))
+
