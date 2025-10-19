@@ -1,4 +1,6 @@
 def peak_index(arr):
+    if len(arr) < 3:
+        return -1
     for i in range(1, len(arr)-1):
         if arr[i] > arr[i+1]:
             return i
@@ -6,6 +8,8 @@ def peak_index(arr):
 
 
 def peakIndex(arr):
+    if len(arr) < 3:
+        return - 1
     left = 0
     right = len(arr) - 1
     while left < right:
