@@ -19,6 +19,9 @@ This repository contains implementations of various Data Structures and Algorith
    - fix bugs.
    - Add practice examples. This example could be an interview question from any Company.
    - Suggest better ways of managing the repository.
+   - Translate code to a different programming language.
+   - Write tests cases.
+  
   
 
 ## Contribution:
@@ -27,7 +30,7 @@ This repository contains implementations of various Data Structures and Algorith
   `git checkout -b feature/your-feature`
 - Implement your changes and write tests.
 - Commit your changes:
-  `git commit -am 'Added new feature'`
+  `git commit -am 'work done'`
 - Push to the branch:
   `git push origin feature/your-feature`
 - Create a pull request.
