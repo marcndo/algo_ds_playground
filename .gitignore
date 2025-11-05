@@ -15,3 +15,6 @@ mainTemplate.txt
 SkeletonTemplate.txt
 .idea/
 ForReview.txt
+neetcode_150/sliding_window/longest_repeated_char_replacement.py
+problems/strings/reverse_string.py
+test.py
