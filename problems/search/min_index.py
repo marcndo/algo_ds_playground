@@ -4,7 +4,6 @@ def find_in_mountain_array(arr, target):
     def binary_search(low, high, target, is_ascending):
         while low <= high:
             mid = low + (high - low) // 2
-            
             if arr[mid] == target:
                 return mid
             
