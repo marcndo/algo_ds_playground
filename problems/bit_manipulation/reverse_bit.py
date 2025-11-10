@@ -5,5 +5,7 @@ def reverse_bit(n):
         result |=(bit << (31 - i))
     return result
 
+print(reverse_bit(1234))
+
 
 
