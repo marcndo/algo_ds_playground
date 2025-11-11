@@ -1,23 +1,27 @@
-from collections import defaultdict
-
-
-def character_replacement(s, k):
-    count = defaultdict(int)
+def brute_force(s, k):
+    result = 0
+    s_len = len(s)
+    counter = {} 
     max_freq = 0
-    left = 0
-    max_len = 0
+    for i in range(s_len):
+        for j in range(i, s_len):
+            counter[s[j]] = 1 + counter.get(s[j], 0)
+            max_freq  = max(max_freq, counter[s[j]])
+            if (j - i + 1) - max_freq <= k:
+                result = max(result , j - i + 1)
+    return result
 
-    for right in range(len(s)):
-        count[s[right]] += 1
-        max_freq = max(max_freq, count[s[right]])
 
-        window_size = right - left + 1
-        if window_size - max_freq > k:
-            count[s[left]] -= 1
-            left += 1
-
-        max_len = max(max_len, right - left + 1)
-
-    return max_len
-
-print(character_replacement("AABABBA", k = 1))
+def longest_repeated_char(s, k):
+    l = 0 
+    max_freq = 0
+    counter = {}
+    result = 0
+    for r in range(len(s)):
+        counter[s[r]] = 1 + counter.get(s[r], 0)
+        max_freq = max(max_freq, counter[s[r]])
+        while (r - l + 1) - max_freq > k:
+            counter[s[l]] -= 1
+            l += 1
+        result = max(result, (r - l + 1))
+    return result
